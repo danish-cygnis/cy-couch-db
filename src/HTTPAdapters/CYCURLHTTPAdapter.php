@@ -91,9 +91,9 @@ class CYCURLHTTPAdapter extends CYHTTPAdapter {
 
     if($chResponse !== false) {
       // prepare the response object
-      $response = new stdClass();
-      $response->headers = new stdClass();
-      $response->headers->_HTTP = new stdClass();
+      $response = new StdClass();
+      $response->headers = new \StdClass();
+      $response->headers->_HTTP = new \StdClass();
       $response->body = '';
 
       // split headers and body

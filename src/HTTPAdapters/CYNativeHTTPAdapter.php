@@ -102,9 +102,9 @@ class CYNativeHTTPAdapter extends CYHTTPAdapter {
     }
 
     // Prepare the data structure to store the response.
-    $response = new stdClass();
-    $response->headers = new stdClass();
-    $response->headers->_HTTP = new stdClass();
+    $response = new \StdClass();
+    $response->headers = new \StdClass();
+    $response->headers->_HTTP = new \StdClass();
     $response->body = '';
 
     $isHeader = true;

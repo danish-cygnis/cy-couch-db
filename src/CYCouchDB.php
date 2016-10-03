@@ -320,7 +320,7 @@ class CYCouchDB {
       throw new CYException('bulk() expects a boolean for its second argument');
     }
 
-    $data = new stdClass();
+    $data = new \StdClass();
 
     //Only send all_or_nothing if it's non-default (true), saving bandwidth.
     if($allOrNothing) {
@@ -450,7 +450,7 @@ class CYCouchDB {
         throw new CYException('getAllDocs() expected an array for the keys.');
       }
 
-      $data = new stdClass();
+      $data = new \StdClass();
       $data->keys = $keys;
 
       return $this->procPacket('POST', "/{$this->db}/_all_docs$qry", json_encode($data));
@@ -515,7 +515,7 @@ class CYCouchDB {
       }
     }
 
-    $data = new stdClass();
+    $data = new \StdClass();
     $data->source = $src;
     $data->target = $target;
 

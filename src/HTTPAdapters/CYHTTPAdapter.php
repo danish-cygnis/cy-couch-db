@@ -62,7 +62,7 @@ abstract class CYHTTPAdapter {
   }
 
   protected function parseCookieString($cookieStr) {
-    $cookies = new stdClass();
+    $cookies = new \StdClass();
 
     foreach(explode('; ', $cookieStr) as $cookie) {
       $crumbs = explode('=', $cookie);
