@@ -3,6 +3,7 @@
 
 namespace CYCouchDB\HTTPAdapters;
 use CYCouchDB\CYException;
+use CYCouchDB\CYCouchException;
 
 abstract class CYHTTPAdapter {
   public $decodeResp = true;
