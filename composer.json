@@ -1,5 +1,5 @@
 {
-    "name": "danish-cygnis/cy-coudh-db",
+    "name": "cygnis/cy-couch-db",
     "type": "library",
     "autoload": {
         "psr-4": {
