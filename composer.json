@@ -1,0 +1,9 @@
+{
+    "name": "danish-cygnis/cy-coudh-db",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "CYCoudhDB\\": "src/"
+        }
+    }
+}
